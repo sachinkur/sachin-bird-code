@@ -1,0 +1,359 @@
+<!--6:15 pm 7/25/2023-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <span style="display: flex;">
+            <h1 class="text-nowrap">Bird Programming</h1>
+            <img src="Get started in Canva.png" height="125px">
+        </span>
+
+        <!-- <label>By sachin, made 6:15 pm 7/25//2023</label> -->
+        <title>Bird Programming |</title>
+        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Python is a powerful language that is easy to learn and use. It has many practical uses in various fields and industries.</p>
+        <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;"></p>
+        <a style="font-family: Verdana, Geneva, Tahoma, sans-serif;" href="https://www.python.org/downloads/">Download python here</a>
+        <br>
+        <br>
+        <span>
+            <a style="font-family: Verdana, Geneva, Tahoma, sans-serif;" href="#one">Getting Started ...</a>
+            <a style="font-family: Verdana, Geneva, Tahoma, sans-serif;" href="#two">Inputs and printing ...</a>
+        </span>
+        <hr>
+    </head>
+    <body>
+        <section id="one">
+            <h2 class="text-nowrap">Getting Started</h2>
+            <label class="change">please select what you already know in python</label>
+            <br>
+            <label class="change">if you are completetly new to python select "Im new to python"</label>
+            <br>
+            <br>
+            <span>
+                <button class="btn-primary"id="new" onclick="new_()">...</button>
+                <label>Im new to python</label>
+            </span>
+            <br>
+            <span>
+                <button class="btn-primary" id="inputing" onclick="inputs_()">...</button>
+                <label>Inputs and printing</label>
+            </span>
+            <br>
+            <span>
+                <button class="btn-primary" id="vari" onclick="var_()">...</button>
+                <label>Variables</label>
+            </span>
+            <br>
+            <span>
+                <button class="btn-primary" id="data_types" onclick="data_()">...</button>
+                <label>Data types</label>
+            </span>
+            <br>
+            <span>
+                <button class="btn-primary" id="if_states" onclick="conditions_()">...</button>
+                <label>If statements and other conditions</label>
+            </span>
+            <br>
+            <span>
+                <button class="btn-primary" id="forloop" onclick="loops_()">...</button>
+                <label>For loops and while loops</label>
+            </span>
+            <br>
+            <span>
+                <button class="btn-primary" id="functions" onclick="func_()">...</button>
+                <label>Funtions</label>
+            </span>
+            <br>
+            <span>
+                <button class="btn-primary" id="classes" onclick="class_()">...</button>
+                <label>Object Oriented</label>
+            </span>
+            <br>
+            <br>
+            <!--
+            <span>
+                <button class="btn btn-success" id="generate" onclick="generate()" >...</button>
+                <label>Generate courses</label>
+            </span>
+            -->
+            <span>
+                <button class="btn btn-primary" id="clear" onclick="clear_()">...</button>
+                <label>Clear</label>
+            </span>
+        </section>
+        <section id="two">
+            <hr>
+            <h2> Inputs and printing 0.1</h2>
+            <label> lets say that we want to display a message on the screen saying "hello, world!" in order to do that we would have to use something</label>
+            <label> called the "print()" function here you can see that there are some brackets after the word "print", and thats where we will put our text</label>
+            <label> example code:</label>
+            <br>
+            <p id="code"> >>> print(" hello, world!")</p>
+            <label>Now run the code!:</label>
+            <p id="code"> >>> hello, world!</p>
+            <label> Now take a minute or two to play around with this consept.</label>
+            <label> Ok so now we have diplayed something on the screen but</label>
+            <label> lets say we want to ask the user a question to do that we use the "input()" function</label>
+            <br>
+            <label> example code: </label><br>
+            <p id="code"> >>> input("what is your name?: ")</p>
+            <label>output: </label><br>
+            <p id="code"> >>> What is your name? bob</p><br>
+            <label> Try it your self and you should be able to write text after the question </label><br>
+            <label class="text-danger"> Tip: always leave a space after you write the question in the input() function so that <br> there is a separation between the question and answer </label>
+        </section>
+        
+        <section id="three">
+            <h2> Variables 0.2</h2>
+            <label> Now lets say we want to gather an input from the user and then print it out.</label>
+            <label> Heres what that would look like: </label><br>
+
+            <p id="code">>>> What is your name? Bob<br> >>> Bob</p>
+
+            <label> To use variables in Python, we can think of them as containers that store some value. For example, if <br> we have a cookie jar with 10 cookies inside, we can label the jar as “cookies”. In Python, we can write this as:</label>
+            <p id="code"> >>> cookies = 10</p>
+            <label> Now if we try to print out the variable "cookies" it should print "10"</label>
+            <p id="code"> >>> cookies = 10</p>
+            <p id="code"> >>> print("cookies")</p>
+            <label> result: </label>
+            <p id="code"> >>> cookies</p>
+            <label class="text-info"> Hmm, that did not work. Instead of printing 10 it printed "cookies" quite literaly</label>
+            <label class="text-info"> Why does this happen? Well its simply because in python when you print something around quotation marks  </label>
+            <label class="text-info"> python always interprets that as a string, which is a seqeuce of characters disincluding integers.</label>
+            <label class="text-info"> So to fix this problem we remove the quotations marks</label><br>
+            <label>Corrected code: </label>
+            <p id="code"> >>> cookies = 10</p>
+            <p id="code"> >>> print(cookies)</p>
+            <br>
+            <P id="code"> >>> 10</P>     
+            
+            <label>There! it worked, now when we collect an input and then store it in a variable then print</label>
+            <label>heres what that would look like</label>
+            <p id="code"> >>> name = input("what is your name?: ")</p>
+            <p id="code"> >>> print(name)</p>
+            <label> Output: </label>
+            <p id="code"> >>> what is your name?: bob</p>
+            <p id="code"> >>> bob</p>
+
+
+        </section>
+        <section id="four"></section>
+        <section id="five"></section>
+        <section id="six"></section>
+        <section id="seven"></section>
+        <section id="eight"></section>
+
+
+            <style>
+
+                html{
+                    margin-left: 7px;
+                }
+                .text-info
+                {
+                    font-weight: 500;
+                }
+                .text-danger
+                {
+                    font-weight: bolder;
+                }
+                h1
+                {
+                    background: none; 
+                    font-family:serif;
+                    margin-top: 40px;
+                }    
+            
+                h2
+                {
+                    background: none;
+                    font-family:serif;
+                }
+                label
+                {
+                    font-family: Georgia, serif;
+                    font-weight: 400;
+                }
+                #code
+                {
+                    font-family: monospace;
+                    font-size: larger ;
+                }
+                .change
+                {
+                    font-family: serif
+                }
+
+
+                #two
+                {
+                    display:none;
+                }
+                #three
+                {
+                    display: none;
+                }
+                #four
+                {
+                    display: none;
+                }
+                #five
+                {
+                    display: none;
+                }
+                #six
+                {
+                    display: none;
+                }
+                #seven
+                {
+                    display: none;
+                }
+                #eight
+                {
+                    display: none;
+                }
+</style>
+<script>
+courses = []
+
+    function new_()
+    {
+        courses.push("new")
+        new_label = document.getElementById('new')
+        new_label.innerHTML = "Selected"
+        console.log(courses)
+    }
+
+    var selected_input    
+    var input_label // declare as global variable
+
+    function inputs_()
+    {
+        courses.push("input")
+        input_label = document.getElementById('inputing') // assign to element with ID 'input'
+        input_label.innerHTML = "Selected"
+
+        selected_input = document.getElementById('two')
+        selected_input.style.display = "block"
+
+        console.log(courses)
+    }
+
+    var vari_label // declare as global variable
+    var selected_var
+
+    function var_()
+    {
+        courses.push("vari")
+
+        vari_label = document.getElementById('vari') // assign to element with ID 'vari'
+        vari_label.innerHTML = "Selected"
+
+        selected_var = document.getElementById('three')
+        selected_var.style.display = "block"
+        console.log(courses)
+    }
+
+    var data_label
+    var selected_data
+
+
+    function data_()
+    {
+        courses.push("data")
+        data_label = document.getElementById('data_types')
+        data_label.innerHTML = "Selected"
+
+        selected_data = document.getElementById('four')
+        selected_data.style.display = "block"
+        console.log(courses)
+    }
+
+    var if_label
+    var selected_if
+
+    function conditions_()
+    {
+        courses.push("if")
+        if_label = document.getElementById('if_states')
+        if_label.innerHTML = "Selected"
+
+        selected_if = document.getElementById('five')
+        selected_if.style.display = "block"
+        console.log(courses)
+    }
+
+    var loop_label
+    var selected_loop
+
+
+    function loops_()
+    {
+        courses.push("loop")
+        loop_label = document.getElementById('forloop')
+        loop_label.innerHTML = "Selected"
+
+        selected_loop = document.getElementById('six')
+        selected_loop.style.display = "block"
+        console.log(courses)
+    }
+
+    var func_label
+    var selected_func
+
+
+    function func_()
+    {
+        courses.push("func")
+        func_label = document.getElementById('functions')
+        func_label.innerHTML = "Selected"
+
+        func_label = document.getElementById('seven')
+        func_label.innerHTML = "Selected"
+        console.log(courses);
+    }
+
+    var obj_label
+    var selected_obj
+
+
+    function class_()
+    {
+        courses.push("oop");
+        obj_label = document.getElementById('classes');
+        obj_label.innerHTML = "Selected";
+
+        selected_obj = document.getElementById('eight')
+        console.log(courses);
+    }
+    function clear_()
+    {
+      if (selected_var) 
+      {
+          selected_var.style.display = "none";
+          vari_label.innerHTML = "..."; // use global variable
+      }
+      if (selected_input) 
+      {
+          selected_input.style.display = "none";
+          input_label.innerHTML = '...'; // use global variable
+      }
+  }
+
+  //function generate()
+  //{
+  //    var generate_label = document.getElementById('generate')
+  //    generate_label.innerHTML = "Generating..."
+  //    console.log("here we go!")
+  //}
+
+  // MAKE SURE TO CLEAR ALL OTHER FUNCTIONS FROM SELECTED
+</script>
+
+
+    </body>
+</html>
